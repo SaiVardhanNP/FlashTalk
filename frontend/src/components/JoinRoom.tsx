@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const JoinRoom = () => {
   const navigate = useNavigate();
-  const [name, setName] = useState('');
-  const [room, setRoom] = useState('');
+  const [name, setName] = useState("");
+  const [room, setRoom] = useState("");
 
   const handleJoin = () => {
     if (!name || !room) return; // basic validation
@@ -22,10 +22,10 @@ const JoinRoom = () => {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-6">
-        <h1 className="text-5xl md:text-6xl font-bold mb-12 text-center">
-          Join a Room
-          <span className="block bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
-            & Start Chatting
+        <h1 className="text-5xl md:text-6xl font-bold mb-12 text-center flex flex-wrap justify-center items-center gap-2">
+          <span> Chat.</span>
+          <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
+            Disappear.
           </span>
         </h1>
 

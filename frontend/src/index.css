@@ -17,3 +17,8 @@
 body {
   font-family: 'Geist Sans', 'Poppins', 'Inter', 'Manrope', 'Outfit', 'IBM Plex Sans', 'Raleway', 'Urbanist', sans-serif;
 }
+/* globals.css or index.css */
+html {
+  @apply scroll-smooth;
+}
+
