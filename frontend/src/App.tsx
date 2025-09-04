@@ -1,10 +1,18 @@
 import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import LandingPage from './components/LandingPage';
+import JoinRoom from './components/JoinRoom';
+import ChatRoom from './components/ChatRoom';
 
 const App = () => {
   return (
-    <div className='h-screen bg-amber-950 flex items-center justify-center'>
-    <h1 className='text-center text-white font-extrabold text-3xl '>Hello WebSockets From React!</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/join" element={<JoinRoom />} />
+        <Route path="/chat/:roomId" element={<ChatRoom />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
