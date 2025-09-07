@@ -25,7 +25,7 @@ const ChatRoom = () => {
   const messagesEndRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    const socket = new WebSocket("ws://localhost:5000");
+    const socket = new WebSocket("https://flashtalk-production.up.railway.app/");
     setWs(socket);
 
     socket.onopen = () => {
